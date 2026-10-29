@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Priya | First-Year B.Tech CSE Portfolio | Rishikesh, India</title>
+  <meta name="description" content="Personal portfolio of Priya, a first-year BTech Computer Science Engineering student from Rishikesh, Uttarakhand, India. Focused on C, Python, HTML/CSS, photography, and continuous learning." />
+  <meta name="keywords" content="Priya, BTech CSE, Portfolio, Rishikesh, Uttarakhand, C Programming, Python, Web Development, IEEE Student Member, Student Developer" />
+  <meta name="author" content="Priya" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Priya | First-Year B.Tech CSE Portfolio" />
+  <meta property="og:description" content="Portfolio of a first-year Computer Science student from Rishikesh, India. Explore academic projects, C/Python code, achievements, and photography." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Google Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'bg-base': '#0B0F19',
+            'surface-dark': '#111827',
+            'surface-elevated': '#161F30',
+            'surface-highlight': '#1F293D',
+            'primary-purple': '#8B5CF6',
+            'primary-deep': '#7C3AED',
+            'accent-lavender': '#A78BFA',
+            'accent-glow': '#D0BCFF',
+            'text-primary': '#F9FAFB',
+            'text-muted': '#9CA3AF',
+            'border-subtle': 'rgba(255, 255, 255, 0.08)',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-[#0B0F19] text-[#F9FAFB] min-h-screen selection:bg-purple-600/40 selection:text-white relative pb-20 md:pb-0">
+
+  <!-- Ambient Glowing Background Lights -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- ======================================================================
+       NAVIGATION BAR (Desktop & Tablet)
+       ====================================================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Monogram -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-700 to-indigo-500 flex items-center justify-center font-heading font-bold text-lg text-white shadow-[0_0_20px_rgba(139,92,246,0.4)] group-hover:scale-105 transition-transform">
+          &lt;P/&gt;
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="font-heading font-bold text-lg tracking-tight text-white group-hover:text-purple-300 transition-colors">Priya</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-purple-950/70 border border-purple-500/30 text-purple-300 text-[10px] font-mono">
+              <span class="pulse-dot"></span> 1st Year CSE
+            </span>
+          </div>
+          <span class="text-[11px] text-[#9CA3AF] font-mono flex items-center gap-1">
+            <i class="fa-solid fa-location-dot text-[10px] text-purple-400"></i> Rishikesh, India
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#home" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">Home</a>
+        <a href="#about" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">About</a>
+        <a href="#skills" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">Skills</a>
+        <a href="#projects" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">Projects</a>
+        <a href="#achievements" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">Achievements</a>
+        <a href="#photography" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">Photography</a>
+        <a href="#contact" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-white/5 transition-all">Contact</a>
+      </nav>
+
+      <!-- Right Action CTA Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openResumeModal()" class="btn-secondary !py-2 !px-3.5 text-xs font-semibold">
+          <span class="material-symbols-outlined text-[16px]">visibility</span>
+          View CV
+        </button>
+        <a href="assets/Priya_Resume.pdf" download="Priya_Resume.pdf" class="btn-primary !py-2 !px-4 text-xs font-semibold">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          Download Resume
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a href="assets/Priya_Resume.pdf" download="Priya_Resume.pdf" class="btn-primary !py-1.5 !px-3 text-xs" title="Download Resume">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+        </a>
+        <button id="mobile-menu-btn" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 focus:outline-none" aria-label="Toggle Navigation Menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-Down Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0D121F]/98 border-b border-white/10 px-6 py-6 space-y-3 backdrop-blur-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <span class="pulse-dot"></span>
+          <span class="text-xs font-mono text-purple-300">B.Tech CSE (First Year) • Rishikesh</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-2 pt-2">
+        <a href="#home" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">home</span> Home
+        </a>
+        <a href="#about" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">person</span> About
+        </a>
+        <a href="#skills" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">terminal</span> Skills
+        </a>
+        <a href="#projects" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">code_blocks</span> Projects
+        </a>
+        <a href="#achievements" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">military_tech</span> Awards
+        </a>
+        <a href="#photography" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">photo_camera</span> Photos
+        </a>
+        <a href="#contact" class="px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:text-white hover:bg-purple-950/40 flex items-center gap-2 col-span-2">
+          <span class="material-symbols-outlined text-[18px] text-purple-400">mail</span> Contact Me
+        </a>
+      </div>
+      <div class="pt-3 border-t border-white/10 flex flex-col gap-2">
+        <a href="assets/Priya_Resume.pdf" download="Priya_Resume.pdf" class="btn-primary w-full text-center text-sm py-2.5 justify-center">
+          <span class="material-symbols-outlined text-[18px]">download</span> Download Resume (PDF)
+        </a>
+        <a href="resume.html" target="_blank" class="btn-secondary w-full text-center text-sm py-2.5 justify-center">
+          <span class="material-symbols-outlined text-[18px]">open_in_new</span> Printable Web Resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       HERO / HOME SECTION
+       ====================================================================== -->
+  <section id="home" class="min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex items-center relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Text & Call to Action -->
+        <div class="lg:col-span-7 flex flex-col items-start gap-6">
+          
+          <!-- Welcome Pill Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs font-semibold backdrop-blur-md shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-purple-400 animate-ping"></span>
+            <span>Namaste & Welcome to my Portfolio Website!</span>
+          </div>
+
+          <!-- Main Hero Headline -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold tracking-tight text-white leading-tight">
+              Hi, I'm <span class="gradient-text">Priya</span>
+            </h1>
+            <div class="text-xl sm:text-2xl font-heading font-semibold text-purple-300 flex items-center gap-2 h-9">
+              <span class="text-accent-lavender">&gt;</span>
+              <span id="typewriter-text" class="text-white"></span>
+              <span class="w-2 h-6 bg-purple-500 animate-pulse inline-block"></span>
+            </div>
+          </div>
+
+          <!-- Introduction Blurb -->
+          <p class="text-base sm:text-lg text-text-muted leading-relaxed max-w-2xl">
+            A passionate first-year <strong class="text-white">B.Tech Computer Science and Engineering</strong> student from the serene river city of <strong class="text-purple-300">Rishikesh, Uttarakhand, India</strong> 🏔️. I am building solid fundamentals in <strong class="text-white">C programming</strong>, <strong class="text-white">Python</strong>, and modern web development, while exploring the intersections of technology, logic, and visual creativity.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+            <a href="#projects" class="btn-primary w-full sm:w-auto">
+              <span class="material-symbols-outlined text-[18px]">explore</span>
+              Explore My Projects
+            </a>
+            <a href="assets/Priya_Resume.pdf" download="Priya_Resume.pdf" class="btn-secondary w-full sm:w-auto">
+              <span class="material-symbols-outlined text-[18px]">download</span>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn-secondary w-full sm:w-auto">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+              Let's Connect
+            </a>
+          </div>
+
+          <!-- Highlights Stat Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 w-full border-t border-white/10 mt-2">
+            <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
+              <div class="text-xl font-heading font-bold text-white">Year 1</div>
+              <div class="text-xs text-text-muted">B.Tech CSE</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
+              <div class="text-xl font-heading font-bold text-purple-400">4+ Tech</div>
+              <div class="text-xs text-text-muted">C, Python, HTML, CSS</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
+              <div class="text-xl font-heading font-bold text-emerald-400">Top 15</div>
+              <div class="text-xs text-text-muted">Hackathon Finalist</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
+              <div class="text-xl font-heading font-bold text-indigo-400">IEEE</div>
+              <div class="text-xs text-text-muted">Active Member</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Interactive Code Terminal Showcase -->
+        <div class="lg:col-span-5">
+          <div class="code-terminal relative group">
+            
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="font-mono text-xs text-text-muted flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px] text-purple-400">terminal</span>
+                <span>priya_bio.c</span>
+              </div>
+              <button id="run-code-btn" class="px-2.5 py-1 rounded bg-purple-900/60 hover:bg-purple-800 text-purple-200 text-[11px] font-mono flex items-center gap-1 transition-colors" title="Simulate C Program Execution">
+                <span class="material-symbols-outlined text-[13px]">play_arrow</span>
+                <span>Run</span>
+              </button>
+            </div>
+
+            <!-- Terminal Code Body -->
+            <div class="p-4 sm:p-5 font-mono text-xs sm:text-[13px] leading-relaxed text-slate-300 overflow-x-auto select-none bg-[#0B0F19]/90">
+              <div class="text-purple-400">// First-Year CSE Student Portfolio Entry</div>
+              <div><span class="text-purple-400">#include</span> <span class="text-emerald-300">&lt;stdio.h&gt;</span></div>
+              <div class="mt-2"><span class="text-purple-400">int</span> <span class="text-indigo-300">main</span>() {</div>
+              
+              <div class="pl-4">
+                <span class="text-purple-400">char</span>* name = <span class="text-emerald-300">"Priya"</span>;<br/>
+                <span class="text-purple-400">char</span>* origin = <span class="text-emerald-300">"Rishikesh, Uttarakhand, India"</span>;<br/>
+                <span class="text-purple-400">char</span>* major = <span class="text-emerald-300">"B.Tech Computer Science (1st Year)"</span>;<br/>
+                <span class="text-purple-400">char</span>* passions[] = {<br/>
+                &nbsp;&nbsp;<span class="text-emerald-300">"Coding in C & Python"</span>,<br/>
+                &nbsp;&nbsp;<span class="text-emerald-300">"Nature & Street Photography"</span>,<br/>
+                &nbsp;&nbsp;<span class="text-emerald-300">"Exploring Web Layouts"</span><br/>
+                };<br/><br/>
+                <span class="text-indigo-300">printf</span>(<span class="text-emerald-300">"Namaste! Welcome to my coding journey.\n"</span>);<br/>
+                <span class="text-indigo-300">printf</span>(<span class="text-emerald-300">"Location: %%s\n"</span>, origin);<br/>
+                <span class="text-indigo-300">printf</span>(<span class="text-emerald-300">"Building step-by-step with curiosity!\n"</span>);<br/><br/>
+                <span class="text-purple-400">return</span> <span class="text-amber-400">0</span>;
+              </div>
+
+              <div>}</div>
+            </div>
+
+            <!-- Interactive Terminal Execution Output Window -->
+            <div id="terminal-output" class="terminal-output hidden">
+              <!-- Populated dynamically via script.js -->
+            </div>
+
+            <!-- Terminal Footer Info Bar -->
+            <div class="bg-[#121622] px-4 py-2 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-text-muted">
+              <span>Standard: C99 / GCC</span>
+              <span class="text-emerald-400 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Ready to build
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       ABOUT ME SECTION
+       ====================================================================== -->
+  <section id="about" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-start gap-2 mb-12">
+        <span class="section-tag flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">person</span>
+          Get To Know Me
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
+          Curiosity, Code & The Charm of Rishikesh
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-1"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Narrative Story -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="glass-card-static p-6 sm:p-8 space-y-4">
+            <h3 class="text-xl font-heading font-semibold text-white flex items-center gap-2">
+              <span class="material-symbols-outlined text-purple-400">school</span>
+              Academic Journey & Background
+            </h3>
+            
+            <p class="text-text-muted leading-relaxed">
+              Hello! I am <strong class="text-white">Priya</strong>, a first-year student pursuing my <strong class="text-purple-300">Bachelor of Technology (B.Tech) in Computer Science and Engineering</strong>. I was born and raised in the tranquil city of <strong class="text-white">Rishikesh, Uttarakhand, India</strong>—the world-renowned gateway to the Garhwal Himalayas and the holy river Ganga.
+            </p>
+
+            <p class="text-text-muted leading-relaxed">
+              Growing up amidst the natural majesty of the Himalayas taught me the value of <strong class="text-white">quiet focus, persistent patience, and keen observation</strong>. These exact qualities drew me toward Computer Science: I love dissecting complex logic, understanding what happens under the hood when a program compiles, and writing clean, understandable code.
+            </p>
+
+            <p class="text-text-muted leading-relaxed">
+              As a beginner engineer, I do not believe in taking shortcuts. Instead, I am immersing myself in procedural programming with <strong class="text-white">C</strong>, scripting and automation with <strong class="text-white">Python</strong>, and mastering the fundamentals of <strong class="text-white">HTML5 and CSS3</strong>. I am enthusiastic about attending college workshops, participating in freshman hackathons, and learning something new every single day.
+            </p>
+
+            <!-- Quick Info Tags -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-white/10 text-xs">
+              <div class="flex items-center gap-2.5 text-text-muted">
+                <span class="w-7 h-7 rounded-lg bg-purple-950/60 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <span><strong>Program:</strong> B.Tech CSE (2024–2028)</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-text-muted">
+                <span class="w-7 h-7 rounded-lg bg-purple-950/60 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <span><strong>Hometown:</strong> Rishikesh, Uttarakhand</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-text-muted">
+                <span class="w-7 h-7 rounded-lg bg-purple-950/60 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                  <i class="fa-solid fa-language"></i>
+                </span>
+                <span><strong>Languages:</strong> English, Hindi</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-text-muted">
+                <span class="w-7 h-7 rounded-lg bg-purple-950/60 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                  <i class="fa-solid fa-code"></i>
+                </span>
+                <span><strong>Focus:</strong> C, Python, Web & Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 4 Interest Pillars -->
+        <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <!-- Pillar 1: Technology -->
+          <div class="glass-card p-5 space-y-3 border-l-4 border-l-purple-500">
+            <div class="w-10 h-10 rounded-xl bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-300">
+              <span class="material-symbols-outlined text-[22px]">memory</span>
+            </div>
+            <h4 class="font-heading font-semibold text-white text-base">Technology & Systems</h4>
+            <p class="text-xs text-text-muted leading-relaxed">
+              Fascinated by computer architecture, how memory is allocated, and how simple binary instructions power modern applications.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Coding -->
+          <div class="glass-card p-5 space-y-3 border-l-4 border-l-indigo-500">
+            <div class="w-10 h-10 rounded-xl bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-indigo-300">
+              <span class="material-symbols-outlined text-[22px]">code</span>
+            </div>
+            <h4 class="font-heading font-semibold text-white text-base">Coding & Logic</h4>
+            <p class="text-xs text-text-muted leading-relaxed">
+              Enjoying the structural beauty of C pointers and file handling, alongside Python scripting for logic automation and rapid prototyping.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Photography -->
+          <div class="glass-card p-5 space-y-3 border-l-4 border-l-pink-500">
+            <div class="w-10 h-10 rounded-xl bg-pink-950/80 border border-pink-500/30 flex items-center justify-center text-pink-300">
+              <span class="material-symbols-outlined text-[22px]">photo_camera</span>
+            </div>
+            <h4 class="font-heading font-semibold text-white text-base">Photography & Framing</h4>
+            <p class="text-xs text-text-muted leading-relaxed">
+              Capturing the Ganga riverbanks and Himalayan sunsets. Photography trains my eye for symmetry, balance, and visual aesthetics in web UI.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Learning New Things -->
+          <div class="glass-card p-5 space-y-3 border-l-4 border-l-emerald-500">
+            <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-300">
+              <span class="material-symbols-outlined text-[22px]">auto_stories</span>
+            </div>
+            <h4 class="font-heading font-semibold text-white text-base">Continuous Learning</h4>
+            <p class="text-xs text-text-muted leading-relaxed">
+              Always eager to explore developer documentation, join IEEE student workshops, collaborate in hackathons, and expand my technical horizon.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       SKILLS SECTION
+       ====================================================================== -->
+  <section id="skills" class="py-20 md:py-28 bg-[#0E1321]/60 relative border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-start gap-2 mb-12">
+        <span class="section-tag flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">terminal</span>
+          Technical Arsenal
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
+          Skills & Technologies I Build With
+        </h2>
+        <p class="text-text-muted text-sm sm:text-base max-w-2xl">
+          An honest, transparent showcase of my core skills as a first-year student. I focus on building strong computational intuition and disciplined coding habits.
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-1"></div>
+      </div>
+
+      <!-- Core 4 Skills Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Skill 1: C Programming -->
+        <div class="glass-card p-6 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-blue-950/80 border border-blue-500/30 flex items-center justify-center text-blue-400 text-2xl font-bold font-mono">
+                C
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-blue-950/60 text-blue-300 border border-blue-500/20">
+                Core Language
+              </span>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-heading font-semibold text-white group-hover:text-blue-300 transition-colors">
+                C Programming
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Foundations of computing, procedural architecture, and direct memory interactions.
+              </p>
+            </div>
+
+            <!-- Concepts Mastered -->
+            <div class="space-y-1.5 pt-2 border-t border-white/10">
+              <span class="text-[11px] font-mono text-blue-400 uppercase font-semibold">Concepts Mastered:</span>
+              <ul class="text-xs text-text-muted space-y-1 list-disc list-inside">
+                <li>Pointers & Address Arithmetic</li>
+                <li>Structures (<code class="text-blue-300">struct</code>) & Memory Alignment</li>
+                <li>File Streams (<code class="text-blue-300">fread, fwrite</code>)</li>
+                <li>Dynamic Memory (<code class="text-blue-300">malloc, free</code>)</li>
+                <li>Modular Multi-file Code Structure</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-text-muted">
+            <span>Coursework: CS101</span>
+            <span class="text-blue-400 font-semibold">Active Lab Focus</span>
+          </div>
+        </div>
+
+        <!-- Skill 2: Python -->
+        <div class="glass-card p-6 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-amber-950/80 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-amber-950/60 text-amber-300 border border-amber-500/20">
+                Scripting & Logic
+              </span>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-heading font-semibold text-white group-hover:text-amber-300 transition-colors">
+                Python Programming
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Rapid problem solving, algorithmic exploration, and automated data processing.
+              </p>
+            </div>
+
+            <!-- Concepts Mastered -->
+            <div class="space-y-1.5 pt-2 border-t border-white/10">
+              <span class="text-[11px] font-mono text-amber-400 uppercase font-semibold">Concepts Mastered:</span>
+              <ul class="text-xs text-text-muted space-y-1 list-disc list-inside">
+                <li>Python 3 Syntax & Logic Flow</li>
+                <li>Lists, Dictionaries, Sets & Tuples</li>
+                <li>Modular Functions & Docstrings</li>
+                <li>File I/O & JSON Parsing</li>
+                <li>Defensive <code class="text-amber-300">try-except</code> Handling</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-text-muted">
+            <span>Hackathon Tool</span>
+            <span class="text-amber-400 font-semibold">Problem Solving</span>
+          </div>
+        </div>
+
+        <!-- Skill 3: HTML5 -->
+        <div class="glass-card p-6 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-orange-950/80 border border-orange-500/30 flex items-center justify-center text-orange-400 text-2xl">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-orange-950/60 text-orange-300 border border-orange-500/20">
+                Structure & Web
+              </span>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-heading font-semibold text-white group-hover:text-orange-300 transition-colors">
+                HTML5 Semantics
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Clean, accessible, and structured document hierarchy for modern browsers.
+              </p>
+            </div>
+
+            <!-- Concepts Mastered -->
+            <div class="space-y-1.5 pt-2 border-t border-white/10">
+              <span class="text-[11px] font-mono text-orange-400 uppercase font-semibold">Concepts Mastered:</span>
+              <ul class="text-xs text-text-muted space-y-1 list-disc list-inside">
+                <li>Semantic Tags (<code class="text-orange-300">main, section, nav</code>)</li>
+                <li>Form Handling & Validations</li>
+                <li>Accessibility & ARIA Landmarks</li>
+                <li>Meta Tags & OpenGraph SEO</li>
+                <li>Clean DOM Hierarchy</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-text-muted">
+            <span>W3C Standard</span>
+            <span class="text-orange-400 font-semibold">Accessible Web</span>
+          </div>
+        </div>
+
+        <!-- Skill 4: CSS3 -->
+        <div class="glass-card p-6 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-purple-950/60 text-purple-300 border border-purple-500/20">
+                Styling & Layout
+              </span>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-heading font-semibold text-white group-hover:text-purple-300 transition-colors">
+                CSS3 & Responsive Design
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Modern responsive layouts, animations, transitions, and dark themes.
+              </p>
+            </div>
+
+            <!-- Concepts Mastered -->
+            <div class="space-y-1.5 pt-2 border-t border-white/10">
+              <span class="text-[11px] font-mono text-purple-400 uppercase font-semibold">Concepts Mastered:</span>
+              <ul class="text-xs text-text-muted space-y-1 list-disc list-inside">
+                <li>CSS Flexbox & 12-Column Grid</li>
+                <li>Media Queries for Handheld Devices</li>
+                <li>Custom Properties (CSS Variables)</li>
+                <li>Smooth Transitions & Micro-glows</li>
+                <li>Glassmorphism & Backdrop Filters</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-text-muted">
+            <span>Modern Layouts</span>
+            <span class="text-purple-400 font-semibold">Responsive Design</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Developer Toolkit Bar -->
+      <div class="mt-10 glass-card-static p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-950/60 border border-purple-500/30 flex items-center justify-center text-purple-400">
+            <span class="material-symbols-outlined text-[20px]">construction</span>
+          </div>
+          <div>
+            <h4 class="font-heading font-semibold text-white text-sm">My First-Year Developer Toolkit</h4>
+            <p class="text-xs text-text-muted">Tools and runtime environments I use in daily coursework & projects</p>
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="tech-tag"><i class="fa-brands fa-git-alt text-amber-500"></i> Git & GitHub</span>
+          <span class="tech-tag"><i class="fa-solid fa-code text-blue-400"></i> Visual Studio Code</span>
+          <span class="tech-tag"><i class="fa-brands fa-linux text-yellow-300"></i> Linux / Bash Basics</span>
+          <span class="tech-tag"><i class="fa-solid fa-gears text-purple-400"></i> GCC / Clang Compiler</span>
+          <span class="tech-tag"><i class="fa-solid fa-file-code text-emerald-400"></i> Markdown Docs</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       PROJECTS SECTION
+       ====================================================================== -->
+  <section id="projects" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="section-tag flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">code_blocks</span>
+            Hands-on Portfolio
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight mt-1">
+            Academic & Hackathon Projects
+          </h2>
+          <p class="text-text-muted text-sm sm:text-base mt-2 max-w-xl">
+            Real, practical builds created during my first-year engineering coursework, hackathon participation, and self-directed web development.
+          </p>
+          <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-2"></div>
+        </div>
+
+        <!-- Filter Pills Bar -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0" id="project-filters">
+          <button class="filter-pill active" data-filter="all">
+            <span class="material-symbols-outlined text-[16px]">grid_view</span> All (4)
+          </button>
+          <button class="filter-pill" data-filter="coursework">
+            <span class="material-symbols-outlined text-[16px]">terminal</span> C Coursework
+          </button>
+          <button class="filter-pill" data-filter="hackathon">
+            <span class="material-symbols-outlined text-[16px]">bolt</span> Hackathon
+          </button>
+          <button class="filter-pill" data-filter="web">
+            <span class="material-symbols-outlined text-[16px]">devices</span> Web Design
+          </button>
+          <button class="filter-pill" data-filter="python">
+            <span class="material-symbols-outlined text-[16px]">integration_instructions</span> Python
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
+        
+        <!-- PROJECT 1: Student Record Management System (C Coursework) -->
+        <article class="project-card-item glass-card p-6 flex flex-col justify-between group" data-category="coursework">
+          <div class="space-y-4">
+            <!-- Visual Terminal Snippet -->
+            <div class="relative w-full rounded-xl overflow-hidden bg-[#0A0E17] border border-white/10 shadow-inner">
+              <div class="bg-[#141A29] px-3.5 py-2 border-b border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                </div>
+                <span class="text-text-muted">student_records.c</span>
+                <span class="text-purple-400 font-semibold text-[10px]">C99 Standard</span>
+              </div>
+              <div class="p-4 font-mono text-xs text-slate-300 leading-relaxed bg-gradient-to-b from-[#0A0E17] to-[#0D1322]">
+                <div class="text-text-muted">// CS101 Coursework Project - Priya</div>
+                <div><span class="text-purple-400">struct</span> <span class="text-amber-300">StudentRecord</span> { <span class="text-blue-300">int</span> rollNo; <span class="text-blue-300">char</span> name[50]; <span class="text-blue-300">float</span> gpa; };</div>
+                <div>FILE *fp = fopen(<span class="text-emerald-300">"records.dat"</span>, <span class="text-emerald-300">"rb+"</span>);</div>
+                <div class="text-purple-300 mt-1">&gt; 1. Add Entry   2. Binary Search   3. Calc GPA</div>
+                <div class="text-emerald-400 font-semibold">&gt; Status: [204 Records Loaded] OK</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="pill-badge !text-[11px] !py-0.5">
+                  <span class="material-symbols-outlined text-[13px]">school</span>
+                  College Lab Coursework
+                </span>
+                <span class="text-xs font-mono text-text-muted">Semester 1</span>
+              </div>
+              
+              <h3 class="text-xl font-heading font-semibold text-white group-hover:text-purple-300 transition-colors">
+                Student Record Management System
+              </h3>
+              
+              <p class="text-sm text-text-muted leading-relaxed">
+                A console-based database application built in C utilizing binary file handling and structures to store, search, update, and manage student academic records securely without external database engines.
+              </p>
+            </div>
+
+            <!-- Tech Stack Chips -->
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tech-tag">C Language</span>
+              <span class="tech-tag">Binary Files (fread/fwrite)</span>
+              <span class="tech-tag">Binary Search O(log n)</span>
+              <span class="tech-tag">Data Structs</span>
+            </div>
+
+            <!-- Metric Box -->
+            <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 text-xs">
+              <div>
+                <span class="text-text-muted block">Storage Engine</span>
+                <span class="font-heading font-semibold text-white">Direct Binary Stream</span>
+              </div>
+              <div>
+                <span class="text-text-muted block">Search Complexity</span>
+                <span class="font-heading font-semibold text-purple-300">O(log n) Fast Lookup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-3 pt-5 mt-4 border-t border-white/10">
+            <button onclick="openProjectModal('student-records')" class="btn-primary flex-1 !py-2.5 text-xs">
+              <span class="material-symbols-outlined text-[16px]">info</span>
+              View Details
+            </button>
+            <a href="https://github.com/priya-cse" target="_blank" rel="noopener noreferrer" class="btn-secondary !py-2.5 text-xs flex items-center gap-1.5">
+              <i class="fa-brands fa-github text-[15px]"></i>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Freshman Hackathon - Campus Companion Utility -->
+        <article class="project-card-item glass-card p-6 flex flex-col justify-between group" data-category="hackathon" data-category-extra="python">
+          <div class="space-y-4">
+            <!-- Visual Mockup Slot -->
+            <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gradient-to-tr from-purple-950/80 via-slate-900 to-indigo-950/80 border border-white/10 flex flex-col justify-between p-4 shadow-inner">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">timer</span>
+                  24h Hackathon Sprint
+                </span>
+                <span class="px-2.5 py-1 rounded-full bg-purple-950/80 border border-purple-500/40 text-purple-300 text-xs font-semibold">
+                  Top 15 Finalist 🏆
+                </span>
+              </div>
+              <div class="space-y-1">
+                <div class="text-xs font-mono text-purple-300 flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">groups</span> Team of 3 • Lead Front-end
+                </div>
+                <div class="text-sm font-heading font-bold text-white">Campus Companion Utility Portal</div>
+                <div class="text-[11px] text-text-muted">Offline-friendly timetables, cafeteria updates & notice alerts</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="pill-badge !text-[11px] !py-0.5 !bg-emerald-950/40 !border-emerald-500/30 !text-emerald-300">
+                  <span class="material-symbols-outlined text-[13px]">bolt</span>
+                  Freshman Hackathon 2024
+                </span>
+                <span class="text-xs font-mono text-emerald-400 font-semibold">Finalist Entry</span>
+              </div>
+              
+              <h3 class="text-xl font-heading font-semibold text-white group-hover:text-purple-300 transition-colors">
+                Campus Companion Utility
+              </h3>
+              
+              <p class="text-sm text-text-muted leading-relaxed">
+                A web utility prototype built in a 24-hour sprint to solve new student confusion regarding daily campus bus schedules, cafeteria mess menus, and lecture adjustments with an offline-first responsive interface.
+              </p>
+            </div>
+
+            <!-- Tech Stack Chips -->
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tech-tag">Python 3</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Responsive Web</span>
+              <span class="tech-tag">Git Collaboration</span>
+            </div>
+
+            <!-- Metric Box -->
+            <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 text-xs">
+              <div>
+                <span class="text-text-muted block">Sprint Duration</span>
+                <span class="font-heading font-semibold text-white">24 Hours Fast Build</span>
+              </div>
+              <div>
+                <span class="text-text-muted block">Hackathon Result</span>
+                <span class="font-heading font-semibold text-emerald-400">Top 15 / 75+ Teams</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-3 pt-5 mt-4 border-t border-white/10">
+            <button onclick="openProjectModal('campus-companion')" class="btn-primary flex-1 !py-2.5 text-xs">
+              <span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+              View Details
+            </button>
+            <a href="https://github.com/priya-cse" target="_blank" rel="noopener noreferrer" class="btn-secondary !py-2.5 text-xs flex items-center gap-1.5">
+              <i class="fa-brands fa-github text-[15px]"></i>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Personal Developer Portfolio (Web Development) -->
+        <article class="project-card-item glass-card p-6 flex flex-col justify-between group" data-category="web">
+          <div class="space-y-4">
+            <!-- Visual Mockup Slot -->
+            <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gradient-to-tr from-[#0F172A] to-[#1E1B4B] border border-white/10 flex flex-col justify-between p-4 shadow-inner">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 text-xs font-semibold flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">devices</span>
+                  Handcrafted Web Project
+                </span>
+                <span class="text-xs font-mono text-purple-300">100% Responsive</span>
+              </div>
+              <div class="space-y-1">
+                <div class="text-sm font-heading font-bold text-white">Personal Portfolio & Web Space</div>
+                <div class="text-[11px] text-text-muted">Modern Dark Navy & Purple Cyber-Glassmorphism Theme</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="pill-badge !text-[11px] !py-0.5">
+                  <span class="material-symbols-outlined text-[13px]">code_blocks</span>
+                  Web Development Mini-Project
+                </span>
+                <span class="text-xs font-mono text-text-muted">Self-Paced</span>
+              </div>
+              
+              <h3 class="text-xl font-heading font-semibold text-white group-hover:text-purple-300 transition-colors">
+                Personal Developer Portfolio
+              </h3>
+              
+              <p class="text-sm text-text-muted leading-relaxed">
+                A fully responsive personal portfolio showcasing semantic HTML5, modern CSS3 custom properties, interactive JavaScript controls, downloadable PDF resume, and accessible typography.
+              </p>
+            </div>
+
+            <!-- Tech Stack Chips -->
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tech-tag">HTML5 Semantics</span>
+              <span class="tech-tag">CSS3 Variables</span>
+              <span class="tech-tag">Vanilla JavaScript</span>
+              <span class="tech-tag">Tailwind CDN</span>
+            </div>
+
+            <!-- Metric Box -->
+            <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 text-xs">
+              <div>
+                <span class="text-text-muted block">Performance Score</span>
+                <span class="font-heading font-semibold text-emerald-400">Lightweight & Fast</span>
+              </div>
+              <div>
+                <span class="text-text-muted block">Design Standard</span>
+                <span class="font-heading font-semibold text-purple-300">Mobile-First</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-3 pt-5 mt-4 border-t border-white/10">
+            <button onclick="openProjectModal('portfolio-template')" class="btn-primary flex-1 !py-2.5 text-xs">
+              <span class="material-symbols-outlined text-[16px]">visibility</span>
+              View Details
+            </button>
+            <a href="https://github.com/priya-cse" target="_blank" rel="noopener noreferrer" class="btn-secondary !py-2.5 text-xs flex items-center gap-1.5">
+              <i class="fa-brands fa-github text-[15px]"></i>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: CLI Mathematical & Logic Utility in Python -->
+        <article class="project-card-item glass-card p-6 flex flex-col justify-between group" data-category="python">
+          <div class="space-y-4">
+            <!-- Visual Mockup Slot -->
+            <div class="relative w-full h-44 rounded-xl overflow-hidden bg-[#0C101C] border border-white/10 flex flex-col justify-between p-4 shadow-inner">
+              <div class="flex items-center justify-between text-xs font-mono">
+                <span class="text-amber-400 flex items-center gap-1">
+                  <i class="fa-brands fa-python"></i> math_utility.py
+                </span>
+                <span class="text-text-muted">Python 3.x</span>
+              </div>
+              <div class="font-mono text-xs text-slate-300 space-y-0.5">
+                <div class="text-text-muted">&gt;&gt;&gt; import math_utils</div>
+                <div>&gt;&gt;&gt; math_utils.prime_factorize(2024)</div>
+                <div class="text-amber-300">[2, 2, 11, 23]</div>
+                <div>&gt;&gt;&gt; math_utils.run_interactive_quiz()</div>
+                <div class="text-emerald-400 font-semibold">[Report saved: results.txt]</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="pill-badge !text-[11px] !py-0.5 !bg-amber-950/40 !border-amber-500/30 !text-amber-300">
+                  <span class="material-symbols-outlined text-[13px]">terminal</span>
+                  Python Practice Project
+                </span>
+                <span class="text-xs font-mono text-text-muted">Independent</span>
+              </div>
+              
+              <h3 class="text-xl font-heading font-semibold text-white group-hover:text-purple-300 transition-colors">
+                CLI Mathematical & Logic Utility
+              </h3>
+              
+              <p class="text-sm text-text-muted leading-relaxed">
+                An interactive command-line application in Python featuring number theory algorithms (prime factorization, GCD/LCM, sequence generation), a timed math puzzle, and automated session logging.
+              </p>
+            </div>
+
+            <!-- Tech Stack Chips -->
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tech-tag">Python 3</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">CLI Architecture</span>
+              <span class="tech-tag">File Logging</span>
+            </div>
+
+            <!-- Metric Box -->
+            <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 text-xs">
+              <div>
+                <span class="text-text-muted block">Modules</span>
+                <span class="font-heading font-semibold text-white">Clean & Modular</span>
+              </div>
+              <div>
+                <span class="text-text-muted block">Error Handling</span>
+                <span class="font-heading font-semibold text-amber-300">100% Defensive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-3 pt-5 mt-4 border-t border-white/10">
+            <button onclick="openProjectModal('python-math-utility')" class="btn-primary flex-1 !py-2.5 text-xs">
+              <span class="material-symbols-outlined text-[16px]">info</span>
+              View Details
+            </button>
+            <a href="https://github.com/priya-cse" target="_blank" rel="noopener noreferrer" class="btn-secondary !py-2.5 text-xs flex items-center gap-1.5">
+              <i class="fa-brands fa-github text-[15px]"></i>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       ACHIEVEMENTS & WORKSHOPS SECTION
+       ====================================================================== -->
+  <section id="achievements" class="py-20 md:py-28 bg-[#0E1321]/60 relative border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-start gap-2 mb-12">
+        <span class="section-tag flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">military_tech</span>
+          Milestones & Engagement
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
+          Workshops, Certificates & IEEE Activities
+        </h2>
+        <p class="text-text-muted text-sm sm:text-base max-w-2xl">
+          Authentic milestones from my first year of engineering—verified workshop participations, professional student branch activities, and foundational certifications.
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-1"></div>
+      </div>
+
+      <!-- 3 Pillars Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: IEEE Student Branch -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-6 border-t-4 border-t-blue-500">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-950/80 border border-blue-500/30 flex items-center justify-center text-blue-400">
+              <span class="material-symbols-outlined text-[26px]">public</span>
+            </div>
+            
+            <div>
+              <span class="pill-badge !text-[10px] !bg-blue-950/40 !border-blue-500/30 !text-blue-300">Professional Body</span>
+              <h3 class="text-xl font-heading font-semibold text-white mt-2">
+                IEEE Student Branch Activities
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Active member of the College IEEE Student Branch, engaging with senior peers and technical mentors.
+              </p>
+            </div>
+
+            <ul class="space-y-3 pt-3 border-t border-white/10 text-xs text-text-muted">
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-blue-400 text-[18px] flex-shrink-0 mt-0.5">verified</span>
+                <span><strong>Active Student Member:</strong> Registered IEEE student member participating in tech society meetings and webinars.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-blue-400 text-[18px] flex-shrink-0 mt-0.5">emoji_events</span>
+                <span><strong>IEEE Tech Week:</strong> Engaged in coding sprints, technical quiz rounds, and guest lectures by industry engineers.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-blue-400 text-[18px] flex-shrink-0 mt-0.5">groups</span>
+                <span><strong>Peer Mentorship:</strong> Collaborated on open-source toolkits and collaborative coding etiquette with senior branch members.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-3 rounded-xl bg-blue-950/30 border border-blue-500/20 text-xs font-mono text-blue-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">badge</span>
+            IEEE Student Member #Active
+          </div>
+        </div>
+
+        <!-- Pillar 2: Technical Workshops Attended -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-6 border-t-4 border-t-purple-500">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400">
+              <span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+            </div>
+            
+            <div>
+              <span class="pill-badge !text-[10px]">Hands-on Training</span>
+              <h3 class="text-xl font-heading font-semibold text-white mt-2">
+                Technical Workshops Attended
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Practical, immersive laboratory sessions bridging academic theory with real engineering workflows.
+              </p>
+            </div>
+
+            <ul class="space-y-3 pt-3 border-t border-white/10 text-xs text-text-muted">
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-purple-400 text-[18px] flex-shrink-0 mt-0.5">commit</span>
+                <span><strong>Hands-on Git & GitHub Workshop:</strong> Learned branch isolation, pull requests, merge conflict resolution, and remote syncing.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-purple-400 text-[18px] flex-shrink-0 mt-0.5">memory</span>
+                <span><strong>C Programming & Memory Architecture:</strong> Deep-dive seminar covering hardware stack, heap allocation, and compiler optimization.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-purple-400 text-[18px] flex-shrink-0 mt-0.5">web</span>
+                <span><strong>Web Development Foundations Bootcamp:</strong> 3-day college workshop covering HTML5 semantics, flexbox, and mobile responsiveness.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-3 rounded-xl bg-purple-950/30 border border-purple-500/20 text-xs font-mono text-purple-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">school</span>
+            College Developer Club • 2024
+          </div>
+        </div>
+
+        <!-- Pillar 3: Certificates & Recognitions -->
+        <div class="glass-card p-6 flex flex-col justify-between space-y-6 border-t-4 border-t-emerald-500">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+              <span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+            </div>
+            
+            <div>
+              <span class="pill-badge !text-[10px] !bg-emerald-950/40 !border-emerald-500/30 !text-emerald-300">Credentials</span>
+              <h3 class="text-xl font-heading font-semibold text-white mt-2">
+                Certificates & Recognitions
+              </h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Foundational credentials validating self-study, lab coursework, and competition milestones.
+              </p>
+            </div>
+
+            <ul class="space-y-3 pt-3 border-t border-white/10 text-xs text-text-muted">
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-emerald-400 text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+                <span><strong>Programming Essentials in C:</strong> Completed comprehensive procedural C programming coursework with high lab distinction.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-emerald-400 text-[18px] flex-shrink-0 mt-0.5">terminal</span>
+                <span><strong>Python for Beginners Certification:</strong> Online certified foundational course covering syntax, data structures, and file operations.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-emerald-400 text-[18px] flex-shrink-0 mt-0.5">trophy</span>
+                <span><strong>Freshman Hackathon Finalist Certificate:</strong> Awarded Top 15 Finalist out of 75+ teams for the Campus Companion project.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/20 text-xs font-mono text-emerald-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Authentic First-Year Portfolio
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       PHOTOGRAPHY & CREATIVE INTERESTS GALLERY
+       ====================================================================== -->
+  <section id="photography" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-start gap-2 mb-12">
+        <span class="section-tag flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">photo_camera</span>
+          Through My Lens
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
+          Photography: Rishikesh & The Art of Observation
+        </h2>
+        <p class="text-text-muted text-sm sm:text-base max-w-2xl">
+          Living in Rishikesh inspires a quiet, disciplined perspective. Photography sharpens my attention to light, symmetry, and detail—qualities that directly enhance how I approach software design and clean user interfaces.
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-1"></div>
+      </div>
+
+      <!-- Photo Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Photo 1: Triveni Ghat Sunset -->
+        <div class="glass-card overflow-hidden group cursor-pointer" onclick="openPhotoLightbox('ghats', 'https://images.unsplash.com/photo-1626014303757-658c1485a3c2?auto=format&fit=crop&w=800&q=80')">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1626014303757-658c1485a3c2?auto=format&fit=crop&w=800&q=80" alt="Triveni Ghat, Rishikesh at sunset with reflection on River Ganga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-transparent"></div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+            </div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-mono px-2 py-0.5 rounded bg-purple-950/80 text-purple-300 backdrop-blur-md border border-purple-500/30">
+              Rishikesh, India
+            </span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="font-heading font-semibold text-white text-sm group-hover:text-purple-300 transition-colors">
+              Evening Sunset at Triveni Ghat
+            </h4>
+            <p class="text-xs text-text-muted line-clamp-2">
+              Golden hour reflections on the Ganges. Studying color transitions here inspires subtle UI gradient pairings.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Shivalik Himalayan Mist -->
+        <div class="glass-card overflow-hidden group cursor-pointer" onclick="openPhotoLightbox('mountains', 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80')">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Misty Himalayan mountain foothills early morning near Rishikesh" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-transparent"></div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+            </div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-mono px-2 py-0.5 rounded bg-purple-950/80 text-purple-300 backdrop-blur-md border border-purple-500/30">
+              Shivalik Foothills
+            </span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="font-heading font-semibold text-white text-sm group-hover:text-purple-300 transition-colors">
+              Morning Mist over the Hills
+            </h4>
+            <p class="text-xs text-text-muted line-clamp-2">
+              Layered ridges in early morning fog. Taught me about visual depth, spatial hierarchy, and contrast.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Ram Jhula Suspension Bridge -->
+        <div class="glass-card overflow-hidden group cursor-pointer" onclick="openPhotoLightbox('bridge', 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80')">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Architectural symmetry of Ram Jhula suspension bridge over river Ganga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-transparent"></div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+            </div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-mono px-2 py-0.5 rounded bg-purple-950/80 text-purple-300 backdrop-blur-md border border-purple-500/30">
+              Ram Jhula Bridge
+            </span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="font-heading font-semibold text-white text-sm group-hover:text-purple-300 transition-colors">
+              Suspension Cables & Symmetry
+            </h4>
+            <p class="text-xs text-text-muted line-clamp-2">
+              Leading lines and structural balance. Mirrors clean architecture and predictable grid alignment in code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Coding Desk Setup -->
+        <div class="glass-card overflow-hidden group cursor-pointer" onclick="openPhotoLightbox('workspace', 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80')">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Developer study desk with laptop, warm ambient lights and code terminal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-transparent"></div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+            </div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-mono px-2 py-0.5 rounded bg-purple-950/80 text-purple-300 backdrop-blur-md border border-purple-500/30">
+              Study Space
+            </span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="font-heading font-semibold text-white text-sm group-hover:text-purple-300 transition-colors">
+              Late Night Code & Study Desk
+            </h4>
+            <p class="text-xs text-text-muted line-clamp-2">
+              Where C pointers, logic problems, and creative ideas come together with warm tea and quiet focus.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       CONTACT SECTION
+       ====================================================================== -->
+  <section id="contact" class="py-20 md:py-28 bg-[#0E1321]/60 relative border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-start gap-2 mb-12">
+        <span class="section-tag flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">alternate_email</span>
+          Let's Connect
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
+          Get In Touch & Collaborate
+        </h2>
+        <p class="text-text-muted text-sm sm:text-base max-w-2xl">
+          Interested in collaborating on hackathons, discussing first-year college projects, sharing coding tips, or connecting for internship opportunities? Feel free to reach out!
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-1"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Contact Cards & Resume Card -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Email Card with Copy Button -->
+          <div class="glass-card p-5 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 text-lg flex-shrink-0">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-xs text-text-muted block">Direct Email</span>
+                <span class="text-sm font-semibold text-white truncate block">priya.cse.rishikesh@example.com</span>
+              </div>
+            </div>
+            <button onclick="copyToClipboard('priya.cse.rishikesh@example.com', 'Email address')" class="p-2 rounded-lg bg-white/5 hover:bg-purple-900/40 text-purple-300 transition-colors flex-shrink-0" title="Copy Email to Clipboard">
+              <span class="material-symbols-outlined text-[18px]">content_copy</span>
+            </button>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com/in/priya-cse" target="_blank" rel="noopener noreferrer" class="glass-card p-5 flex items-center justify-between gap-4 group">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-blue-950/80 border border-blue-500/30 flex items-center justify-center text-blue-400 text-lg flex-shrink-0">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <span class="text-xs text-text-muted block">LinkedIn Profile</span>
+                <span class="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors">linkedin.com/in/priya-cse</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-text-muted group-hover:text-blue-300 group-hover:translate-x-1 transition-all text-[20px]">
+              north_east
+            </span>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/priya-cse" target="_blank" rel="noopener noreferrer" class="glass-card p-5 flex items-center justify-between gap-4 group">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-slate-800 border border-white/10 flex items-center justify-center text-white text-lg flex-shrink-0">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div>
+                <span class="text-xs text-text-muted block">GitHub Repositories</span>
+                <span class="text-sm font-semibold text-white group-hover:text-purple-300 transition-colors">github.com/priya-cse</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-text-muted group-hover:text-purple-300 group-hover:translate-x-1 transition-all text-[20px]">
+              north_east
+            </span>
+          </a>
+
+          <!-- Location Card -->
+          <div class="glass-card p-5 flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-lg flex-shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <span class="text-xs text-text-muted block">Location Base</span>
+              <span class="text-sm font-semibold text-white">Rishikesh, Uttarakhand, India 🏔️</span>
+            </div>
+          </div>
+
+          <!-- Downloadable Resume Card -->
+          <div class="glass-card p-6 bg-gradient-to-br from-purple-950/40 via-surface-dark to-indigo-950/40 border border-purple-500/30 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="pill-badge !text-[10px]">Official Curriculum Vitae</span>
+              <span class="text-xs font-mono text-purple-300">PDF Document</span>
+            </div>
+            <h4 class="font-heading font-semibold text-white text-base">
+              Download My Student Resume
+            </h4>
+            <p class="text-xs text-text-muted leading-relaxed">
+              Clean 1-page PDF detailing academic coursework, SGPA (8.9), C and Python skills, hackathon project details, and IEEE activities.
+            </p>
+            <div class="flex items-center gap-2 pt-2">
+              <a href="assets/Priya_Resume.pdf" download="Priya_Resume.pdf" class="btn-primary flex-1 !py-2 text-xs">
+                <span class="material-symbols-outlined text-[16px]">download</span>
+                Download PDF
+              </a>
+              <button onclick="openResumeModal()" class="btn-secondary !py-2 text-xs">
+                <span class="material-symbols-outlined text-[16px]">visibility</span>
+                Preview
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Working Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card-static p-6 sm:p-8 space-y-6">
+            <div class="space-y-1">
+              <h3 class="text-xl font-heading font-semibold text-white">
+                Send a Direct Message
+              </h3>
+              <p class="text-xs text-text-muted">
+                Fill in the details below. Messages are validated and can be delivered via mailto or client notification.
+              </p>
+            </div>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Name -->
+                <div class="space-y-1.5">
+                  <label for="contact-name" class="block text-xs font-mono text-text-muted">Your Name *</label>
+                  <input type="text" id="contact-name" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-2.5 rounded-xl bg-[#090D18] border border-white/10 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" />
+                </div>
+
+                <!-- Email -->
+                <div class="space-y-1.5">
+                  <label for="contact-email" class="block text-xs font-mono text-text-muted">Your Email Address *</label>
+                  <input type="email" id="contact-email" required placeholder="name@domain.com" class="w-full px-4 py-2.5 rounded-xl bg-[#090D18] border border-white/10 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" />
+                </div>
+
+              </div>
+
+              <!-- Subject -->
+              <div class="space-y-1.5">
+                <label for="contact-subject" class="block text-xs font-mono text-text-muted">Subject / Topic</label>
+                <input type="text" id="contact-subject" placeholder="e.g. Hackathon collaboration, First-Year Mentorship" class="w-full px-4 py-2.5 rounded-xl bg-[#090D18] border border-white/10 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" />
+              </div>
+
+              <!-- Message -->
+              <div class="space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <label for="contact-message" class="block text-xs font-mono text-text-muted">Message *</label>
+                  <span id="char-count" class="text-[11px] font-mono text-text-muted">0 / 500 characters</span>
+                </div>
+                <textarea id="contact-message" rows="5" maxlength="500" required placeholder="Write your message or inquiry here..." class="w-full px-4 py-2.5 rounded-xl bg-[#090D18] border border-white/10 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-primary w-full !py-3 text-sm font-semibold">
+                <span class="material-symbols-outlined text-[18px]">send</span>
+                Send Message
+              </button>
+
+              <!-- Status Box -->
+              <div id="form-status" class="hidden pt-2"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="bg-[#080B12] border-t border-white/10 py-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <!-- Brand -->
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-purple-700 flex items-center justify-center font-heading font-bold text-white text-base">
+            &lt;P/&gt;
+          </div>
+          <div>
+            <div class="font-heading font-bold text-white text-base">Priya</div>
+            <div class="text-xs text-text-muted font-mono">B.Tech CSE Undergraduate • Rishikesh, Uttarakhand</div>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-3">
+          <a href="https://github.com/priya-cse" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-purple-900/40 text-text-muted hover:text-white flex items-center justify-center transition-colors" title="GitHub">
+            <i class="fa-brands fa-github text-base"></i>
+          </a>
+          <a href="https://linkedin.com/in/priya-cse" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-purple-900/40 text-text-muted hover:text-blue-400 flex items-center justify-center transition-colors" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in text-base"></i>
+          </a>
+          <a href="mailto:priya.cse.rishikesh@example.com" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-purple-900/40 text-text-muted hover:text-purple-300 flex items-center justify-center transition-colors" title="Email">
+            <i class="fa-solid fa-envelope text-base"></i>
+          </a>
+          <a href="resume.html" target="_blank" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-purple-900/40 text-text-muted hover:text-emerald-400 flex items-center justify-center transition-colors" title="Printable Resume">
+            <i class="fa-solid fa-file-invoice text-base"></i>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-xs text-text-muted text-center md:text-right space-y-0.5">
+          <div>Crafted with pride in Rishikesh, Uttarakhand 🏔️</div>
+          <div class="text-[11px] text-slate-500">Built with HTML5, CSS3, Modern JS & Nocturne Lumina Theme</div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ======================================================================
+       BOTTOM MOBILE QUICK DOCK (App-like navigation for phone screens)
+       ====================================================================== -->
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 glass-nav border-t border-white/10 pb-safe">
+    <div class="flex items-center justify-around h-16 px-1">
+      <a href="#home" class="bottom-bar-link flex flex-col items-center justify-center min-w-[50px] py-1 text-text-muted hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">home</span>
+        <span class="text-[10px] font-medium mt-0.5">Home</span>
+      </a>
+      <a href="#about" class="bottom-bar-link flex flex-col items-center justify-center min-w-[50px] py-1 text-text-muted hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">person</span>
+        <span class="text-[10px] font-medium mt-0.5">About</span>
+      </a>
+      <a href="#skills" class="bottom-bar-link flex flex-col items-center justify-center min-w-[50px] py-1 text-text-muted hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">terminal</span>
+        <span class="text-[10px] font-medium mt-0.5">Skills</span>
+      </a>
+      <a href="#projects" class="bottom-bar-link flex flex-col items-center justify-center min-w-[50px] py-1 text-text-muted hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">code_blocks</span>
+        <span class="text-[10px] font-medium mt-0.5">Projects</span>
+      </a>
+      <a href="#achievements" class="bottom-bar-link flex flex-col items-center justify-center min-w-[50px] py-1 text-text-muted hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">military_tech</span>
+        <span class="text-[10px] font-medium mt-0.5">Awards</span>
+      </a>
+      <a href="#contact" class="bottom-bar-link flex flex-col items-center justify-center min-w-[50px] py-1 text-text-muted hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[20px]">chat</span>
+        <span class="text-[10px] font-medium mt-0.5">Contact</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================================
+       BACK TO TOP FLOATING BUTTON
+       ====================================================================== -->
+  <button id="back-to-top" class="fixed bottom-20 md:bottom-8 right-6 z-40 w-11 h-11 rounded-full bg-purple-600/90 hover:bg-purple-500 text-white shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 focus:outline-none" aria-label="Back to top">
+    <span class="material-symbols-outlined text-[22px]">arrow_upward</span>
+  </button>
+
+
+  <!-- ======================================================================
+       MODAL 1: PROJECT DEEP DIVE MODAL
+       ====================================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-overlay">
+    <div class="w-full max-w-2xl rounded-2xl bg-[#111827] border border-purple-500/30 p-6 sm:p-8 shadow-2xl flex flex-col gap-6 max-h-[85vh] overflow-y-auto">
+      
+      <!-- Modal Header -->
+      <div class="flex items-start justify-between gap-4 border-b border-white/10 pb-4">
+        <div>
+          <span id="modal-category" class="pill-badge !text-[10px] !mb-1.5">Category</span>
+          <h3 id="modal-title" class="text-2xl font-heading font-bold text-white">Project Title</h3>
+        </div>
+        <button onclick="closeProjectModal()" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center text-text-muted hover:text-white transition-colors" aria-label="Close modal">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="space-y-5 text-sm">
+        
+        <div>
+          <h4 class="font-heading font-semibold text-purple-300 text-xs uppercase tracking-wider mb-1">Project Overview</h4>
+          <p id="modal-overview" class="text-text-muted leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-semibold text-purple-300 text-xs uppercase tracking-wider mb-1">Problem It Solves</h4>
+          <p id="modal-problem" class="text-text-muted leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-semibold text-purple-300 text-xs uppercase tracking-wider mb-2">Key Technical Features</h4>
+          <ul id="modal-features" class="space-y-2"></ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-semibold text-purple-300 text-xs uppercase tracking-wider mb-2">Technologies Used</h4>
+          <div id="modal-stack" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-purple-950/30 border border-purple-500/20">
+          <h4 class="font-heading font-semibold text-purple-300 text-xs uppercase tracking-wider mb-1 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">psychology</span>
+            Key Academic Takeaway
+          </h4>
+          <p id="modal-learnings" class="text-xs text-text-muted leading-relaxed"></p>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="flex items-center justify-between gap-4 pt-4 border-t border-white/10">
+        <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary text-xs !py-2.5 flex items-center gap-2">
+          <i class="fa-brands fa-github text-sm"></i>
+          View on GitHub
+        </a>
+        <button onclick="closeProjectModal()" class="btn-primary text-xs !py-2.5">
+          Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ======================================================================
+       MODAL 2: RESUME PREVIEW MODAL
+       ====================================================================== -->
+  <div id="resume-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-overlay">
+    <div class="w-full max-w-4xl rounded-2xl bg-[#111827] border border-purple-500/30 p-6 shadow-2xl flex flex-col gap-4 max-h-[90vh]">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-purple-400">description</span>
+          <h3 class="text-lg font-heading font-bold text-white">Priya - Student Curriculum Vitae Preview</h3>
+        </div>
+        <button onclick="closeResumeModal()" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center text-text-muted hover:text-white">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Iframe Preview of Web Resume -->
+      <div class="flex-1 w-full bg-slate-900 rounded-xl overflow-hidden border border-white/10 min-h-[450px]">
+        <iframe src="resume.html" class="w-full h-full border-0 min-h-[450px]"></iframe>
+      </div>
+
+      <!-- Footer Actions -->
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+        <div class="text-xs text-text-muted font-mono">
+          First-Year B.Tech CSE • Rishikesh, Uttarakhand
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="resume.html" target="_blank" class="btn-secondary !py-2 text-xs">
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            Open Full Screen
+          </a>
+          <a href="assets/Priya_Resume.pdf" download="Priya_Resume.pdf" class="btn-primary !py-2 text-xs">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            Download Official PDF
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ======================================================================
+       MODAL 3: PHOTOGRAPHY LIGHTBOX MODAL
+       ====================================================================== -->
+  <div id="photo-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-overlay">
+    <div class="w-full max-w-3xl rounded-2xl bg-[#0D121F] border border-purple-500/30 overflow-hidden shadow-2xl flex flex-col">
+      <div class="relative bg-black flex items-center justify-center max-h-[60vh]">
+        <img id="lightbox-img" src="" alt="Photo enlarged view" class="max-h-[60vh] w-auto object-contain" />
+        <button onclick="closePhotoLightbox()" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center backdrop-blur-md">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="p-6 space-y-2 bg-[#111827]">
+        <div class="flex items-center justify-between">
+          <h4 id="lightbox-title" class="text-lg font-heading font-bold text-white"></h4>
+          <span id="lightbox-location" class="text-xs font-mono text-purple-300"></span>
+        </div>
+        <p id="lightbox-caption" class="text-xs text-text-muted leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
